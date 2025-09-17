@@ -49,6 +49,3 @@ if questionSelect == 'Qual funcionário tem o maior salário líquido e qual tem
     
     st.write('Funcionário(s) com menor salário líquido: ')
     st.write(data.loc[data['Salário Líquido'] == data['Salário Líquido'].min()][['Nome Completo', 'Salário Líquido']])
-    
-st.bar_chart(data[['Salário Líquido', 'Salário Bruto', 'Nome Completo']].set_index('Nome Completo'))
-st.bar_chart([data['Gratificação R$'].sum(), data['Nível Funcional'].sum()])
